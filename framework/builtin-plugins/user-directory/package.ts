@@ -5,6 +5,12 @@ export default definePackage({
   kind: "app",
   version: "0.1.0",
   displayName: "User Directory",
+  defaultCategory: {
+    id: "user_management",
+    label: "User Management",
+    subcategoryId: "directory_profiles",
+    subcategoryLabel: "Directory & Profiles"
+  },
   description: "Internal person and directory backbone.",
   extends: [],
   dependsOn: ["auth-core","org-tenant-core","role-policy-core","audit-core"],
